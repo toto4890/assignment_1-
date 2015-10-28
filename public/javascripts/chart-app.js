@@ -4,7 +4,6 @@ google.load("visualization", "1", {packages:["corechart"]});
 app.controller('MainController', ['$scope', '$http',  function($scope, $http) {
   $http.get('/data').success(function(data){
   
-  
   var dataArray = formatDataForView(data);
   
   dataArray.splice(1,1);
@@ -46,6 +45,9 @@ app.controller('MainController', ['$scope', '$http',  function($scope, $http) {
   
   var options ={
     title: 'Average Temperature 2014 in San Francisco',
+    width: 1000,
+        height: 500,
+    bar: {groupWidth: "95%"},
     hAxis: {title: 'Month'},
     hAxis: {minValue: 0},
     vAxis: {title: 'Temp. In Fahrenheit', titleTextStyle: {color: '#333'}},
