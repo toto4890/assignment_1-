@@ -2,11 +2,11 @@ var mongoose = require('mongoose');
 
 var GraphDataSchema = new mongoose.Schema({
   Year: String,
-  Sales: String,
-  Expenses: String
+  AvgMax: String,
+  AvgMin: String
 }, 
 {
-  collection: 'graph-data-collection'
+  collection: 'example'
 });
 
 mongoose.model('GraphData', GraphDataSchema);
