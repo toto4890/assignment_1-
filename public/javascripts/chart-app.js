@@ -45,8 +45,8 @@ app.controller('MainController', ['$scope', '$http',  function($scope, $http) {
   
   var options ={
     title: 'Average Temperature 2014 in San Francisco',
-    width: 1000,
-        height: 500,
+    width: 800,
+    height: 350,
     bar: {groupWidth: "95%"},
     hAxis: {title: 'Month'},
     hAxis: {minValue: 0},
