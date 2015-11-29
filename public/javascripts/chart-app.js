@@ -81,36 +81,6 @@ function formatDataForView(data) {
     return dataArray;
 }
 
-// function numberToMonth(RawdataArray) {
-  
-//   for (var i = 1; i < RawdataArray.length; i++){
-      
-//       if(RawdataArray[i][0]==1){
-//         RawdataArray[i][0] = 'January'
-//       }else if(RawdataArray[i][0]==2){
-//         RawdataArray[i][0] = 'February'
-//       }else if(RawdataArray[i][0]==3){
-//         RawdataArray[i][0] = 'March'
-//       }else if(RawdataArray[i][0]==4){
-//         RawdataArray[i][0] = 'April'
-//       }else if(RawdataArray[i][0]==5){
-//         RawdataArray[i][0] = 'May'
-//       }else if(RawdataArray[i][0]==6){
-//         RawdataArray[i][0] = 'June'
-//       }else if(RawdataArray[i][0]==7){
-//         RawdataArray[i][0] = 'July'
-//       }else if(RawdataArray[i][0]==8){
-//         RawdataArray[i][0] = 'August'
-//       }else if(RawdataArray[i][0]==9){
-//         RawdataArray[i][0] = 'September'
-//       }else if(dataArray[i][0]==10){
-//         RawdataArray[i][0] = 'October'
-//       }else if(RawdataArray[i][0]==11){
-//         RawdataArray[i][0] = 'November'
-//       }else{
-//         RawdataArray[i][0] = 'December'
-//       }
-//   }
-  
-//   return  RawdataArray;
-// }
+angular.module('showHideApp',[]).controller('showHideController', function($scope){
+      $scope.show=false;
+  });
